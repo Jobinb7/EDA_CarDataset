@@ -30,7 +30,7 @@ The following are the distribution of the numerical variables graphically.
 The following are the ditribution of the categorical variables graphically
 ![Alt Text](https://github.com/Jobinb7/EDA_CarDataset/blob/de35ef49f86e3d52ae6a8ed77cffc627461ee4b4/categorical_distribution.png)
 .There are 20 columns which is lacking in variability ,cannot considered for modelling. The following graph was used to used determine this 
-![Alt Text](
+![Alt Text](https://github.com/Jobinb7/EDA_CarDataset/blob/79dd10cca7499dc9556210f5ba120ff0eca11fd1/most_frequent_value_ratio.png)
 
 
  There are 25 columns ,which has atleast 4 different values.Because of the variability in the data ,these columns can be considered for modelling  
