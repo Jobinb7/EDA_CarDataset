@@ -5,7 +5,7 @@ import seaborn as sns
 import math
 import missingno as msno
 from scipy.stats import shapiro
-from scipy.stats import chi2_contingency
+
 
 # Connect to MySQL and accessing the car Database created inside the MYSQL
 conn = mysql.connector.connect(
@@ -62,10 +62,10 @@ print(f"numerical_cols ( {num_data}):  {numerical_cols}")
 
 
 
-# 4️Distribution plots for numerical features
+# Distribution plots for variables
 
 
-print("\n=== Distribution Plots ===")
+print("\n=== Distribution Plots for numerical  ===")
 num_cols = numerical_cols
 
 n_cols = 3
@@ -79,6 +79,27 @@ for i, col in enumerate(num_cols, 1):
 
 plt.tight_layout()
 plt.show()
+
+print("\n==Distribution plots  categorical  ===")
+categorical_cols = df.select_dtypes(include='object').columns[:10]
+
+# Set up the subplot grid
+fig, axes = plt.subplots(2, 5, figsize=(20, 8))
+axes = axes.flatten()  # flatten 2D grid to 1D array for easy indexing
+
+# Loop over 10 categorical columns
+for i, col in enumerate(categorical_cols):
+    sns.countplot(data=df, y=col, ax=axes[i], order=df[col].value_counts().index[:10])
+    axes[i].set_title(col)
+    axes[i].set_xlabel('Count')
+    axes[i].set_ylabel('')
+
+# Adjust layout
+plt.tight_layout()
+plt.suptitle("Distribution of 10 Categorical Variables", fontsize=16, y=1.03)
+plt.show()
+
+
 
 
 print("\n=== most frequent entry or Over represented feature value==")
