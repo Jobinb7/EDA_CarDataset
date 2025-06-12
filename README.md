@@ -33,11 +33,13 @@ The following are the ditribution of the categorical variables graphically
 ![Alt Text](https://github.com/Jobinb7/EDA_CarDataset/blob/79dd10cca7499dc9556210f5ba120ff0eca11fd1/most_frequent_value_ratio.png)
 
 
- There are 25 columns ,which has atleast 4 different values.Because of the variability in the data ,these columns can be considered for modelling .
+ There are 25 columns ,which has atleast 4 different values.Because of the variability in the data ,these columns can be considered for modelling .This is determined graphically.
  
  The relationship between all the numerical variables are determined by correlation matrix.The following is the heat map graph shows the postive correlation,
  negative correlation .
- ![Alt](
+ ![Alt](https://github.com/Jobinb7/EDA_CarDataset/blob/c3426ffdd19e2c0d02fe0f2e8f2562d03f4ec8ae/Correlation_matrix.png)
+None of the 16 numerical variables folows normal distribution as confirmed by shapiro wilk test
+ 
 
 
 
