@@ -18,10 +18,10 @@ Data : Dataset is taken from kaggle(https://www.kaggle.com/datasets/shalwalsingh
 
  4)  Univariate analysis
  5)  Multivariate nalysis
-
+ 6)  Normality tests
 📊 Key Insights
 
 The intial dataset contain 1262 rows and 129 columns.After determining the missing values in each columns by "df.isnull().sum()" and by plotting Missing values per columns.
-
+![Alt Text]()
 
     
