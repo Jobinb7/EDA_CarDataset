@@ -22,6 +22,7 @@ Data : Dataset is taken from kaggle(https://www.kaggle.com/datasets/shalwalsingh
 📊 Key Insights
 
 The intial dataset contain 1262 rows and 129 columns.After determining the missing values in each columns by "df.isnull().sum()" and by plotting Missing values per columns.
-![Alt Text]()
+![Alt Text](https://github.com/Jobinb7/EDA_CarDataset/blob/90862e9ca25d1d6c4f9591949a15ac1d0fca2bbf/percentage_of_missing.png)
+
 
     
