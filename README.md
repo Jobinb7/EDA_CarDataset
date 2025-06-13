@@ -42,7 +42,7 @@ The following are the ditribution of the categorical variables graphically
  negative correlation .
  ![Alt](https://github.com/Jobinb7/EDA_CarDataset/blob/c3426ffdd19e2c0d02fe0f2e8f2562d03f4ec8ae/Correlation_matrix.png)
  None of the 16 numerical variables folows normal distribution as confirmed by shapiro wilk test.
- Management of missing values are not done because my aim was to predict  resale value of the car and those droppped variables are not useful for the same.
+ Management of missing values are not done because my aim was to predict  resale  price of the car and those droppped variables are not useful for the same.
 
 
 
